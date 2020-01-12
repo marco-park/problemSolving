@@ -36,7 +36,6 @@ int main(){
    base |= (1<<('t'-'a'));
    base |= (1<<('c'-'a'));
    base |= (1<<('i'-'a'));
-
    int ret = 0;
 
    for(int i=base; i<(1<<26); i++){

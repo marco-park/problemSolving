@@ -20,7 +20,6 @@ int main(){
     scanf("%d",&t);
     while(t--){
         scanf("%d%d",&n,&m);
-        memset(d,0,sizeof(d));
         for(int i=0;i<=m;i++)for(int j=0;j<=m*2;j++)d[i][j] = -1;
         //double에 memset 안먹는다.
         printf("%.10Lf\n",foo(0,0));

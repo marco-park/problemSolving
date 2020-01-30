@@ -5,8 +5,7 @@
 using namespace std;
 
 int d[101][101],track[101][101];
-int n;
-int a[101][101];
+int a[101][101],n;
 
 int foo(int x,int y){
     if(x==n)return 0;

@@ -22,10 +22,9 @@ int foo(int x,int y,int visited){
 
 int main(){
     cin >> r >> c;
-    for(int i=0;i<r;i++){
-        for(int j=0;j<c;j++){
+    for(int i=0;i<r;i++)
+        for(int j=0;j<c;j++)
             cin >> map[i][j];
-        }
-    }
+        
     cout << foo(0,0,(1<<(map[0][0]-'A'))) << '\n';
 }

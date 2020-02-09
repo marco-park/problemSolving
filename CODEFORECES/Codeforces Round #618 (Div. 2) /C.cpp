@@ -8,6 +8,8 @@ int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
+    /*  (x | y) - y => x & ~y   */
+
     int n;
     cin >> n;
     for(int i=0;i<n;i++){

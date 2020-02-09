@@ -14,7 +14,7 @@ int main(){
     for(int start=0;start<=b.size()-a.size();start++){
         int tmp =0;
         for(int i=0;i<a.size();i++){
-            if(i>=start)tmp+=(a[i]!=b[i+start]);
+            tmp+=(a[i]!=b[i+start]);
         }
         ret = min(tmp,ret);
     }

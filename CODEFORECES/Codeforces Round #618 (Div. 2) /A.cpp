@@ -21,7 +21,7 @@ int main(){
                 sum++;
                 ret++;
             }
-            else sum+=a[i];
+            sum+=a[i];
         }
         if(!sum){
             ret++;

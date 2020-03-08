@@ -46,8 +46,7 @@ int main(){
         cout << -1 << '\n';
         return 0;
     }
-    int last = 0;
-    int ret = 0;
+    int last = 0,ret=0;
     for(auto x:p){
         if(!last)ret+=foo(s.substr(last,x+1));
         else ret+=foo(s.substr(last+1,x-last));

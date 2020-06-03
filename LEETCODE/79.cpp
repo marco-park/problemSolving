@@ -10,6 +10,7 @@ public:
     int dx[4]={0,0,1,-1};
     int dy[4]={1,-1,0,0};
     bool visited[201][201]={0,};
+    
     bool dfs(vector<vector<char>>& board,int x,int y,string s,string word,int n,int m){
         if(s==word)return true;
         for(int i=0;i<4;i++){

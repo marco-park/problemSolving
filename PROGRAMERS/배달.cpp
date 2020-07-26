@@ -6,7 +6,7 @@ using namespace std;
 
 struct P{
     int dest, cost;
-    bool operator < (const P &p){return cost > p.cost;}
+    bool operator < (const P &p) const {return cost > p.cost;}
 };
 
 

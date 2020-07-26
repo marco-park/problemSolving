@@ -10,8 +10,9 @@ struct P{
 };
 
 
-int dijkstra(vector<vector<P>> &p, int dest, int N, int K){
+int dijkstra(vector<vector<P>> &p, int N, int K){
     priority_queue<P>pq;
+    int ret = 0;
     int d[51];
     for(int i=0;i<N;i++)d[i]=0x3f3f3f3f;
     d[0] = 0;
@@ -30,7 +31,8 @@ int dijkstra(vector<vector<P>> &p, int dest, int N, int K){
             }
         }
     }
-    return d[dest] <= K;
+    for(int i=0;i<N;i++)ret+=(d[i]<=K);
+    return ret;
 }
 
 int solution(int N, vector<vector<int> > road, int K) {
@@ -46,7 +48,7 @@ int solution(int N, vector<vector<int> > road, int K) {
         p[e].push_back({s,c});
     }
 
-    for(int i=0;i<N;i++)answer+=dijkstra(p,i,N,K);
+    answer=dijkstra(p,N,K);
 
     return answer;
 }

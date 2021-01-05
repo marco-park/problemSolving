@@ -1,2 +1,1 @@
-ps online judge 모음
-복습용
+코틀린 연습용
